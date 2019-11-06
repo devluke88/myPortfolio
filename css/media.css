@@ -55,11 +55,17 @@
         padding-left: 1rem;
     }
 
-    
+    /*skills*/
+    .fab {
+        font-size: 10rem;
+    }
 
-
-
-    
-
-    
+    .spacer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    max-width: 100rem;
+    margin: 0 auto;
+    }  
 }

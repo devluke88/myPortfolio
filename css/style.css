@@ -4,7 +4,8 @@
   --greenSecondary: #72BA64;
   --primaryDark: #03363d;
   --gray: #757575;
-  --lightgray: #F0F0F0;
+  /* --lightgray: #F0F0F0; */
+  --lightgray: #FAFAFA;
   --red1: #DB444C;
   --red2: #F36C66;
   --html: #FC490B;
@@ -154,17 +155,32 @@ ion-icon {
   font-weight: 600;
 }
 
-.spacer {
+/* Skills icons */
+.spacer-wrapper {
   background-color: var(--lightgray);
-  margin: 0 auto;
+  padding: 5rem 3.3rem 10rem 3.3rem;
   text-align: center;
-  padding: 5rem;
 }
 
-/* Skills icons */
-.fab {
-  font-size: 10rem;
+.spacer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 100rem;
+  margin: 0 auto;
 }
+
+.spacer-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.fab {
+  font-size: 5rem;
+}
+
 .fa-html5 {
   color: var(--html);
 }
@@ -173,7 +189,7 @@ ion-icon {
   color: var(--css);
 }
 
-.fa-js {
+.fa-js-square {
   color: var(--js);
 }
 
@@ -184,3 +200,27 @@ ion-icon {
 .fa-wordpress-simple {
   color: var(--wordpress);
 }
+
+h2.skills__header,
+h2.work__header {
+  font-size: 4rem;
+  margin-bottom: 4rem;
+}
+
+#work {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: repeat(2, 1fr);
+  grid-gap: 1rem;
+  margin: 0 auto;
+}
+
+.work-item {
+  max-width: 40rem;
+  border: 1px solid var(--lightgray);
+}
+
+.rectan-img {
+  width: 100%;
+}
+
