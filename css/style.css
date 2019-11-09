@@ -115,6 +115,11 @@ ion-icon {
 
 
 /*--INTRO */
+
+.bg {
+ background-color: #fafafa;
+}
+
 .intro__logo {
   margin: 0 auto;
 }
@@ -219,8 +224,8 @@ h2.work__header {
 }
 
 .work-item {
-  width: 400px;
-  border: 1px solid var(--primaryDark);
+  max-width: 38.6rem;
+  
 }
 
 .work-item__link {
@@ -230,6 +235,7 @@ h2.work__header {
 .work-img {
   object-fit: cover;
   width: 100%;
+  border: 1px solid var(--primaryDark);
 }
 
 
@@ -238,3 +244,12 @@ h2.work__header {
   max-width: 95%;
   width: 1200px;
 } */
+
+.languages {
+  list-style: none;
+  display: flex;
+}
+
+.wordpress {
+  font-size: 1.6rem;
+}
