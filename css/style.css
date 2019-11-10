@@ -13,6 +13,7 @@
   --js: #F0DB4F;
   --boot: #6F42C1;
   --wordpress: #0073AA;
+  --woocommerce: #9B5C8F;
 }
 
 *,
@@ -39,18 +40,22 @@ body {
   max-width: 1176px;
   margin: 0 auto;
   text-align: center;
-  padding: 3.3rem;
+  padding: 0 3.3rem 0 3.3rem;
 }
 
 /*NAVBAR*/
 
 .header-section {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 3rem;
+  padding-top: 2.5rem;
 }
 
-nav {
+.header {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.5rem;
+}
+
+#nav {
   display: flex;
   flex-direction: column; 
 }
@@ -116,8 +121,9 @@ ion-icon {
 
 /*--INTRO */
 
-.bg {
+#intro-section {
  background-color: #fafafa;
+ padding: 10rem 0;
 }
 
 .intro__logo {
@@ -211,10 +217,17 @@ h2.work__header {
   font-size: 4rem;
   margin-bottom: 4rem;
 }
+/* END Skills icons */
 
-#work {
+/*WORK SECTION*/
+
+#work-section {
+  padding: 10rem 0rem;
+}
+
+.work__grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   grid-column-gap: 20px;
   grid-row-gap: 15px;
   /* grid-template-rows: repeat(2, 1fr); */
@@ -224,32 +237,80 @@ h2.work__header {
 }
 
 .work-item {
-  max-width: 38.6rem;
+  /* max-width: 38.6rem; */
+  /* border: 1px solid var(--primaryDark); */
+}
+
+.work-image-box {
+  background-color: var(--red2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40rem;
   
 }
 
-.work-item__link {
-  max-width: 100%;
-}
-
 .work-img {
-  object-fit: cover;
-  width: 100%;
-  border: 1px solid var(--primaryDark);
+  width: 60%;
+  transition: transform 1000ms ease;
+  border-radius: 4px;
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.1);
 }
 
+.work-img:hover {
+  transform: scale(1.1);
+}
 
-/* .container {
-  margin: 0 auto;
-  max-width: 95%;
-  width: 1200px;
-} */
+.info {
+  padding: 1.5rem 3rem 1.5rem 0rem;
+}
 
 .languages {
   list-style: none;
   display: flex;
+  font-size: 1.4rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.languages>li:not(:first-child) {
+  margin-left: 2rem;
 }
 
 .wordpress {
-  font-size: 1.6rem;
+  color: var(--wordpress);
+} 
+
+.woocommerce {
+  color: var(--woocommerce);
+} 
+
+.work__header {
+  text-align: left;
+  font-size: 4rem;
+  font-weight: 400;
+  margin-bottom: 2rem;
+}
+
+.work__desc {
+  text-align: left;
+  font-size: 1.8rem;
+  line-height: 1.5em;
+  margin-bottom: 2rem;
+}
+
+.work-buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn {
+  padding: 10px 20px;
+  text-decoration: none;
+  color: var(--greenPrimary);
+  border: 1px solid var(--greenPrimary);
+}
+
+.btn:hover {
+  color: var(--greenSecondary);
 }

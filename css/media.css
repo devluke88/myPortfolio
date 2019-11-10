@@ -5,11 +5,10 @@
 
 @media (min-width: 768px) {
 
-    .header-section {
+    .header {
         display: flex;
         flex-direction: row;
-        margin-bottom: 3rem;
-    }
+     }
 
     /*center nav*/
     .logo-text {
@@ -70,9 +69,11 @@
     }  
 }
 @media (min-width: 1024px) {
-.container {
-    margin: 0 auto;
-    max-width: 95%;
-    width: 1200px;
-  } 
+
+    /*WORK SECTION*/
+    .work__grid {
+        margin: 0 auto;
+        max-width: 95%;
+        width: 1200px;
+    } 
 }
