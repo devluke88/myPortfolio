@@ -6,6 +6,8 @@
   --gray: #757575;
   /* --lightgray: #F0F0F0; */
   --lightgray: #FAFAFA;
+  --darkgray: #888888;
+  --othergray: #F2F2F2;
   --red1: #DB444C;
   --red2: #F36C66;
   --html: #FC490B;
@@ -128,12 +130,12 @@ ion-icon {
 
 .intro__logo {
   margin: 0 auto;
+  margin-bottom: 10rem;
 }
 
 .logo-img {
   width: 100%;
   max-width: 250px;
-  margin-bottom: 3rem;
 }
 
 .hero {
@@ -225,16 +227,14 @@ h2.work__header {
   padding: 10rem 0rem;
 }
 
-.work__grid {
+/* .work__grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-column-gap: 20px;
   grid-row-gap: 15px;
-  /* grid-template-rows: repeat(2, 1fr); */
-  /* grid-gap: 1.5rem; */
   justify-items: center;
   margin: 0 auto;
-}
+} */
 
 .work-item {
   /* max-width: 38.6rem; */
@@ -242,7 +242,7 @@ h2.work__header {
 }
 
 .work-image-box {
-  background-color: var(--red2);
+  background-color: var(--lightgray);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -262,7 +262,11 @@ h2.work__header {
 }
 
 .info {
-  padding: 1.5rem 3rem 1.5rem 0rem;
+  text-align: left;
+  background-color: var(--lightgray);
+  padding: 1.5rem 3rem 1.5rem 3rem;
+  font-family: 'Roboto', sans-serif;
+  
 }
 
 .languages {
@@ -270,47 +274,61 @@ h2.work__header {
   display: flex;
   font-size: 1.4rem;
   font-weight: 600;
-  text-transform: uppercase;
+  justify-content: flex-start;
+  /* text-transform: uppercase; */
 }
+
 
 .languages>li:not(:first-child) {
   margin-left: 2rem;
 }
 
 .wordpress {
-  color: var(--wordpress);
+  color: var(--greenPrimary);
 } 
 
 .woocommerce {
-  color: var(--woocommerce);
+  color: var(--greenPrimary);
 } 
 
 .work__header {
-  text-align: left;
-  font-size: 4rem;
-  font-weight: 400;
+  font-family: 'Roboto', sans-serif;
+  font-size: 2.7rem;
+  font-weight: 600;
   margin-bottom: 2rem;
+  letter-spacing: 0.01em;
 }
 
 .work__desc {
-  text-align: left;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  color: var(--darkgray);
   font-size: 1.8rem;
   line-height: 1.5em;
   margin-bottom: 2rem;
+
 }
 
 .work-buttons {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
 }
 
 .btn {
-  padding: 10px 20px;
+  /* padding: 5px 15px; */
+  font-size: 1.8rem;
   text-decoration: none;
-  color: var(--greenPrimary);
-  border: 1px solid var(--greenPrimary);
+  color: var(--primaryDark);
+  /* border: 1px solid var(--greenPrimary);
+  background-color: var(--greenSecondary);
+  border-radius: 4px; */
 }
 
 .btn:hover {
-  color: var(--greenSecondary);
+  text-decoration: underline;
+  color: var(--greenPrimary);
+}
+
+.project {
+  margin-left: 3rem;
 }
