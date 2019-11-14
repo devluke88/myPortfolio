@@ -63,18 +63,22 @@
     }
 
     /*skills*/
-    .fab {
-        font-size: 10rem;
-    }
+    #ifab {
+        font-size: 6rem;
+      }
 
     .spacer {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: space-between;
-    max-width: 100rem;
+    max-width: 80rem;
     margin: 0 auto;
     }  
+
+    .spacer-box__desc {
+        font-size: 1.6rem;
+    }
 }
 @media (min-width: 1024px) {
 

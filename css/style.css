@@ -5,6 +5,7 @@
   --primaryDark: #03363d;
   --gray: #757575;
   /* --lightgray: #F0F0F0; */
+  --gray: #CCCCCC;
   --lightgray: #FAFAFA;
   --darkgray: #888888;
   --othergray: #F2F2F2;
@@ -158,9 +159,9 @@ ion-icon {
 }
 
 .hero__pgrapgh {
-  font-size: 3rem;
+  font-size: 2.5rem;
   line-height: 1.5em;
-  font-weight: 600;
+  font-weight: 400;
 }
 
 .hero__scroll {
@@ -170,8 +171,7 @@ ion-icon {
 
 /* Skills icons */
 .spacer-wrapper {
-  background-color: var(--lightgray);
-  padding: 5rem 3.3rem 10rem 3.3rem;
+  padding: 5rem 3.3rem 0rem 3.3rem;
   text-align: center;
 }
 
@@ -184,35 +184,23 @@ ion-icon {
   margin: 0 auto;
 }
 
+#ifab {
+  font-size: 4rem;
+  color: var(--gray);
+}
+
 .spacer-box {
   display: flex;
   flex-direction: column;
   align-items: center;
+  color: var(--gray);
 }
 
-.fab {
-  font-size: 5rem;
+.spacer-box__desc {
+  font-size: 1rem;
+  font-weight: 500;
 }
 
-.fa-html5 {
-  color: var(--html);
-}
-
-.fa-css3-alt {
-  color: var(--css);
-}
-
-.fa-js-square {
-  color: var(--js);
-}
-
-.fa-bootstrap {
-  color: var(--boot);
-}
-
-.fa-wordpress-simple {
-  color: var(--wordpress);
-}
 
 h2.skills__header,
 h2.work__header {
@@ -247,7 +235,7 @@ h2.work__header {
   justify-content: center;
   align-items: center;
   height: 40rem;
-  
+  border-radius: 20px;
 }
 
 .work-img {
@@ -263,10 +251,16 @@ h2.work__header {
 
 .info {
   text-align: left;
-  background-color: var(--lightgray);
+  /* background-color: var(--lightgray); */
   padding: 1.5rem 3rem 1.5rem 3rem;
   font-family: 'Roboto', sans-serif;
   
+}
+#test {
+  background-color: #FFA2A0;
+}
+#test2 {
+  background-color: #EDEDED;
 }
 
 .languages {
@@ -275,6 +269,7 @@ h2.work__header {
   font-size: 1.4rem;
   font-weight: 600;
   justify-content: flex-start;
+  margin-bottom: 0.6rem;
   /* text-transform: uppercase; */
 }
 
@@ -284,28 +279,28 @@ h2.work__header {
 }
 
 .wordpress {
-  color: var(--greenPrimary);
+  color: var(--gray);
 } 
 
 .woocommerce {
-  color: var(--greenPrimary);
+  color: var(--gray);
 } 
 
 .work__header {
   font-family: 'Roboto', sans-serif;
   font-size: 2.7rem;
   font-weight: 600;
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
   letter-spacing: 0.01em;
 }
 
 .work__desc {
   font-family: 'Roboto', sans-serif;
-  font-weight: 500;
-  color: var(--darkgray);
+  font-weight: 400;
+  color: var(--primaryDark);
   font-size: 1.8rem;
   line-height: 1.5em;
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
 
 }
 
@@ -315,20 +310,32 @@ h2.work__header {
 }
 
 .btn {
-  /* padding: 5px 15px; */
+  padding: 5px 15px;
   font-size: 1.8rem;
+  font-weight: 500;
   text-decoration: none;
-  color: var(--primaryDark);
-  /* border: 1px solid var(--greenPrimary);
+  border-radius: 10px;
+}
+
+.btn-web {
+  color: #fff;
+  border: 1px solid #35BDAF;
+  background-color: #35BDAF;
+}
+
+.btn-web:hover {
+  border: 1px solid var(--greenSecondary);
   background-color: var(--greenSecondary);
-  border-radius: 4px; */
 }
 
-.btn:hover {
-  text-decoration: underline;
-  color: var(--greenPrimary);
-}
-
-.project {
+.btn-pro {
   margin-left: 3rem;
+  color: var(--primaryDark);
+  border: 2px solid var(--primaryDark);
+  transition: all 0.4s;
+}
+
+.btn-pro:hover {
+  color: #fff;
+  background-color: var(--primaryDark);
 }
