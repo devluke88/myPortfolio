@@ -3,7 +3,7 @@
     .work__grid {
         display: grid;
         grid-template-columns: 1fr;
-        grid-column-gap: 20px;
+        grid-column-gap: 30px;
         grid-row-gap: 15px;
         justify-items: center;
         margin: 0 auto;
@@ -85,14 +85,7 @@
     /*WORK SECTION*/
 
     .work__grid {
-        display: grid;
         grid-template-columns: repeat(2, 1fr);
-        grid-column-gap: 20px;
-        grid-row-gap: 15px;
-        justify-items: center;
-        margin: 0 auto;
-        max-width: 95%;
-        width: 1200px;
       }
 
     

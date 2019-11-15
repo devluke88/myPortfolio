@@ -30,7 +30,7 @@
 
 html {
     font-size: 62.5%;
-    font-family: 'Rubik', sans-serif;
+    font-family: 'Josefin Sans', 'Rubik', 'Roboto', sans-serif;
 }
 
 body {
@@ -140,7 +140,7 @@ ion-icon {
 }
 
 .hero {
-  text-align: left;
+  text-align: center;
   max-width: 70rem;
   margin: 0 auto;
 }
@@ -154,8 +154,9 @@ ion-icon {
 
 .hero__header {
   margin-bottom: 1rem; 
-  font-weight: 600;
-  line-height: 1.5em;
+  font-size: 8.4rem;
+  font-weight: 900;
+  line-height: 1em;
 }
 
 .hero__pgrapgh {
@@ -201,32 +202,30 @@ ion-icon {
   font-weight: 500;
 }
 
-
 h2.skills__header,
-h2.work__header {
+h2.work__header2 {
   font-size: 4rem;
   margin-bottom: 4rem;
 }
-/* END Skills icons */
 
-/*WORK SECTION*/
-
-#work-section {
-  padding: 10rem 0rem;
+.work__header2 {
+  text-align: left;
 }
 
-/* .work__grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-column-gap: 20px;
-  grid-row-gap: 15px;
-  justify-items: center;
-  margin: 0 auto;
-} */
+.skills {
+  background-color: var(--lightgray);
+}
+/* END Skills icons */
 
-.work-item {
-  /* max-width: 38.6rem; */
-  /* border: 1px solid var(--primaryDark); */
+
+/*WORK SECTION*/
+#work-section {
+  padding: 10rem 0rem;
+  background-color: var(--lightgray);
+}
+
+.work {
+
 }
 
 .work-image-box {
@@ -235,7 +234,7 @@ h2.work__header {
   justify-content: center;
   align-items: center;
   height: 40rem;
-  border-radius: 20px;
+  border-radius: 12px;
 }
 
 .work-img {
@@ -252,7 +251,7 @@ h2.work__header {
 .info {
   text-align: left;
   /* background-color: var(--lightgray); */
-  padding: 1.5rem 3rem 1.5rem 3rem;
+  padding: 1.5rem 3rem 1.5rem 0rem;
   font-family: 'Roboto', sans-serif;
   
 }
@@ -260,7 +259,7 @@ h2.work__header {
   background-color: #FFA2A0;
 }
 #test2 {
-  background-color: #EDEDED;
+  background-color: #DEEDF4;
 }
 
 .languages {
@@ -270,7 +269,6 @@ h2.work__header {
   font-weight: 600;
   justify-content: flex-start;
   margin-bottom: 0.6rem;
-  /* text-transform: uppercase; */
 }
 
 
