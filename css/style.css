@@ -40,7 +40,7 @@ body {
 }
 
 .wrapper {
-  max-width: 1176px;
+  max-width: 1520px;
   margin: 0 auto;
   text-align: center;
   padding: 0 3.3rem 0 3.3rem;
@@ -229,12 +229,12 @@ h2.work__header2 {
 }
 
 .work-image-box {
-  background-color: var(--lightgray);
+  background-color: var(--othergray);
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 40rem;
-  border-radius: 12px;
+  flex-basis: 100%;
+  height: 740px;
 }
 
 .work-img {
@@ -245,7 +245,7 @@ h2.work__header2 {
 }
 
 .work-img:hover {
-  transform: scale(1.1);
+  /* transform: scale(1.1); */
 }
 
 .info {
@@ -255,12 +255,12 @@ h2.work__header2 {
   font-family: 'Roboto', sans-serif;
   
 }
-#test {
+/* #test {
   background-color: #FFA2A0;
 }
 #test2 {
   background-color: #DEEDF4;
-}
+} */
 
 .languages {
   list-style: none;
