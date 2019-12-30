@@ -79,6 +79,13 @@
     .spacer-box__desc {
         font-size: 1.6rem;
     }
+
+    .about-box {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
 }
 @media (min-width: 1024px) {
 
