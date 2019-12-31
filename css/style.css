@@ -227,7 +227,7 @@ h2.about__header2 {
   background-color: var(--lightgray);
 }
 
-.work {
+.work-item {
 
 }
 
@@ -235,27 +235,16 @@ h2.about__header2 {
   background-color: var(--othergray);
   display: flex;
   flex-direction: column;
-  /*justify-content: center;
-  align-items: center;
-  flex-basis: 100%;
-  height: 740px;*/
-  padding: 10rem 8rem 10rem 8rem;
-
+  padding: 5rem 2rem 5rem 2rem;
 }
 
 .work-img {
   width: 100%;
-  /*transition: transform 1000ms ease;*/
   border-radius: 4px;
-  /*box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.1);*/
-}
-
-.work-img:hover {
-   /*transform: scale(1.05); */
 }
 
 .info {
-  margin-top: 6rem;
+  margin-top: 3rem;
   text-align: left;
   font-family: 'Roboto', sans-serif;
 }
@@ -264,7 +253,7 @@ h2.about__header2 {
   list-style: none;
   text-transform: uppercase;
   display: flex;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   font-weight: 600;
   justify-content: flex-start;
   margin-bottom: 1.5rem;
@@ -291,7 +280,7 @@ h2.about__header2 {
 .work__header,
 .work__header3 {
   font-family: 'Roboto', sans-serif;
-  font-size: 3.6rem;
+  font-size: 3rem;
   font-weight: 600;
   margin-bottom: 1.5rem;
   letter-spacing: 0.01em;
@@ -299,7 +288,7 @@ h2.about__header2 {
 
 #work-main {
   font-family: 'Roboto', sans-serif;
-  font-size: 2.8rem;
+  font-size: 2rem;
   font-weight: 600;
   letter-spacing: 0.01em;
   color: var(--primaryDark);
@@ -309,10 +298,9 @@ h2.about__header2 {
   font-family: 'Roboto', sans-serif;
   font-weight: 600;
   color: var(--gray2);
-  font-size: 3rem;
+  font-size: 2rem;
   line-height: 1.2em;
   padding-bottom: 2rem;
-
 }
 
 .work-buttons {
@@ -353,9 +341,9 @@ h2.about__header2 {
 
 .btn-view {
   text-decoration: none;
-  font-size: 2.2rem;
+  font-size: 1.8rem;
   font-weight: 500;
-  margin-right: 3rem;
+  margin-right: 2rem;
   color: var(--primaryDark);
   border-bottom: 3px solid transparent;
   transition: all 0.3s;
@@ -380,10 +368,9 @@ h2.about__header2 {
 .about-box__card {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  padding-right: 10rem;
+  align-items: center;
   max-width: 70rem;
-  text-align: left;
+  text-align: center;
 }
 
 .about-img,
@@ -394,4 +381,5 @@ h2.about__header2 {
 
 footer {
   background-color: var(--othergray);
+  text-align: center;
 }
