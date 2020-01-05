@@ -2,6 +2,7 @@
   --GreenGradient: linear-gradient(to right, #72BA64, #3EAB36);
   --greenPrimary: #3EAB36;
   --greenSecondary: #72BA64;
+  --greenAnother: #0FA958;
   --primaryDark: #03363d;
   --gray: #757575;
   /* --lightgray: #F0F0F0; */
@@ -309,7 +310,7 @@ h2.about__header2 {
 }
 
 .btn {
-  padding: 5px 15px;
+  padding: 1rem 1.5rem;
   font-size: 1.8rem;
   font-weight: 500;
   text-decoration: none;
@@ -328,7 +329,7 @@ h2.about__header2 {
 }
 
 .btn-pro {
-  margin-left: 3rem;
+  font-size: 2rem;
   color: var(--primaryDark);
   border: 2px solid var(--primaryDark);
   transition: all 0.4s;
@@ -369,8 +370,12 @@ h2.about__header2 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  max-width: 70rem;
+  flex: 1;
   text-align: center;
+}
+
+.about-box__img {
+  flex: 1;
 }
 
 .about-img,
@@ -378,8 +383,24 @@ h2.about__header2 {
   width: 100%;
 }
 
+/*CONTACT*/
+#contact {
+  background-color: var(--greenAnother);
+  padding: 15rem 0 15rem 0;
+}
+
+.contact__header2 {
+  font-size: 4rem;
+  margin-bottom: 2rem; 
+}
+
+.contact__desc {
+  margin-bottom: 4rem;
+}
+
 
 footer {
-  background-color: var(--othergray);
+  padding: 10rem 0;
+  background-color: #F2F2F2;
   text-align: center;
 }
